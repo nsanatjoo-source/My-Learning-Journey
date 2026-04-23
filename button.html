@@ -23,12 +23,9 @@
         opacity: 0.7;
     }
     .subscribe-button:active {
-        button:active {
             transform: translateY(1px);
             box-shadow: none;
 }
-        opacity: 0.5;
-    }
     .join-button {
         background-color: white;
         border-color: rgb(3, 94, 221);
@@ -83,8 +80,32 @@
         transform: translateY(1px);
         box-shadow: none;
     }
+    
+ .button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px; 
+  padding: 20px;
+  background-color: #f9f9f9; 
+  border-radius: 8px;
+}
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
     /* Removed default border and added custom padding for a modern look */
 </style>
+<div class="button-container">
+  <button class="subscribe-button">SUBSCRIBE</button>
+  <button class="join-button">JOIN</button>
+  <button class="tweet-button">Tweet</button>
+</div>
 <button class="subscribe-button">
     SUBSCRIBE
 </button>
