@@ -33,7 +33,7 @@
         .container {
             width: 90%;
             max-width: 800px;
-            margin: -30px auto 30px auto; /* Brings the container slightly over the header */
+            margin: -30px auto 30px auto;
             background: white;
             padding: 40px;
             border-radius: 10px;
@@ -85,32 +85,106 @@
         .contact-info p {
             margin: 10px 0;
         }
+        
+.timeline {
+    border-left: 3px solid var(--primary-color);
+    margin: 20px 0;
+    padding-left: 20px;
+    position: relative;
+}
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -28px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.project-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+    background: var(--card-bg);
+}
+.project-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+}
+.tag {
+    font-size: 0.7rem;
+    background: #eee;
+    padding: 2px 8px;
+    border-radius: 10px;
+    color: #555;
+}
     </style>
 </head>
 <body>
 
-    <!-- Header Section -->
+    
     <header>
         <h1>Nazanin Sanatjoo</h1>
         <p>Zukünftiger Fachinformatikerin | Bewerberin für Ausbildung / Duales Studium</p>
     </header>
 
-    <!-- Main Content -->
+   
     <div class="container">
         
-        <!-- Personal Data -->
+       
         <div class="personal-info">
             <p>📍 Wohnort: Berlin</p>
             <p>📅 Geburtsdatum: 24.09.2001</p>
         </div>
-
-        <!-- About Me -->
         <section>
             <h2>Über mich</h2>
-            <p>Hallo! Ich lebe in Berlin und bin hochmotiviert, meine Karriere in der IT-Welt zu starten. Ich bewerbe mich für eine Ausbildung zum Fachinformatiker oder ein Duales Studium. Ich bringe eine große Leidenschaft für neue Technologien, logisches Denken und eine außergewöhnlich hohe Lernbereitschaft mit.</p>
+            <p>Ich lebe in Berlin und arbeite gezielt auf meinen Einstieg in die IT hin. Aktuell bereite ich mich auf eine Ausbildung zum Fachinformatiker bzw. ein duales Studium vor und beschäftige mich eigenständig mit IT-Themen. Besonders interessieren mich neue Technologien und deren praktische Anwendung. Ich denke analytisch und arbeite mich strukturiert in neue Inhalte ein.</p>
         </section>
+<div class="card">
+    <h2>Mein Werdegang</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <strong>2024 - Heute:</strong> Selbststudium IT & Webentwicklung (Berlin)
+        </div>
+        <div class="timeline-item">
+            <strong>2020 - 2024:</strong> Bachelor of Music - Ferdows-universität Mashhad
+        </div>
+        <div class="timeline-item">
+            <strong>2001:</strong> Geboren am 24. September
+        </div>
+    </div>
+</div>
 
-        <!-- The Bridge: Music and IT (Highlight Section) -->
+<div class="card">
+    <h2>Erste IT-Projekte</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Persönliche Webseite</h3>
+            <p>Ein responsives Portfolio mit Dark Mode, entwickelt mit HTML5 und CSS3.</p>
+            <span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">JS</span>
+        </div>
+        <div class="project-card">
+            <h3>Music-Logic Script</h3>
+            <p>Ein kleines Python-Experiment zur Analyse von Musikmustern (In Arbeit).</p>
+            <span class="tag">Python</span> <span class="tag">Logic</span>
+        </div>
+    </div>
+</div>
+
+        
         <section class="music-it-bridge">
             <h3>🎵 Von der Musik zur IT – Eine perfekte Verbindung</h3>
             <p>Auf den ersten Blick scheinen Musik und Informatik völlig unterschiedliche Welten zu sein. Doch wer genauer hinsieht, erkennt starke Parallelen:</p>
@@ -122,16 +196,16 @@
             <p>Mein Hintergrund in der Musik hat mir genau diese Fähigkeiten verliehen, die ich nun mit voller Energie in die IT und Softwareentwicklung einbringen möchte.</p>
         </section>
 
-        <!-- Education -->
+        
         <section>
             <h2>Bildungsweg</h2>
             <ul>
-                <li><strong>Bachelor of Music (oder Arts)</strong> - Ferdo, [Jahrgang z.B. 2020 - 2024]</li>
-                <li><strong>Abitur / Schulabschluss</strong> - Rahrovan-Schule, 2020</li>
+                <li><strong>Bachelor of Music </strong> - Ferdowsuniversität Mashhad, 2020 - 2024</li>
+                <li><strong>Abitur / Schulabschluss</strong> - Rahrovan-schule Mashhad, 2020</li>
             </ul>
         </section>
 
-        <!-- Skills & Qualities -->
+        
         <section>
             <h2>Kenntnisse & Soft Skills</h2>
             <ul>
@@ -139,11 +213,11 @@
                 <li>Stark ausgeprägtes logisches und analytisches Denken</li>
                 <li>Hohe Frustrationstoleranz und Durchhaltevermögen</li>
                 <li>Teamfähigkeit und schnelle Auffassungsgabe</li>
-                <li>Sprachen: [z.B. Persisch (Muttersprache), Deutsch (B2/C1), Englisch (Fließend)]</li>
+                <li>Sprachen: Persisch (Muttersprache), Deutsch (B2/C1), Englisch (Fließend)</li>
             </ul>
         </section>
 
-        <!-- Contact Info -->
+        
         <section class="contact-info">
             <h2>Kontakt</h2>
             <p>Ich freue mich über die Gelegenheit zu einem persönlichen Gespräch!</p>
