@@ -131,6 +131,45 @@
     border-radius: 10px;
     color: #555;
 }
+/* استایل آیکون‌های علاقه‌مندی */
+.interests-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.interest-item {
+    text-align: center;
+    background: var(--bg-color);
+    padding: 15px;
+    border-radius: 12px;
+    width: 100px;
+    transition: 0.3s;
+}
+.interest-item:hover {
+    transform: scale(1.1);
+    background: var(--primary-color);
+    color: white;
+}
+.interest-icon {
+    font-size: 1.5rem;
+    display: block;
+}
+
+
+.modern-footer {
+    background: var(--header-bg);
+    color: #bdc3c7;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+.footer-line {
+    width: 50px;
+    height: 2px;
+    background: var(--primary-color);
+    margin: 10px auto;
+}
     </style>
 </head>
 <body>
