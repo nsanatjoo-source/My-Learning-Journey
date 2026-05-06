@@ -62,10 +62,13 @@
             padding: 20px;
             border-radius: 8px;
             border: 1px solid #bce0ee;
+            margin-top: 30px;
+            transition: all 0.3s;
         }
         .music-it-bridge h3 {
             color: #2980b9;
             margin-top: 0;
+            transition: all 0.3s;
         }
         ul {
             list-style-type: disc;
@@ -131,7 +134,7 @@
     border-radius: 10px;
     color: #555;
 }
-/* استایل آیکون‌های علاقه‌مندی */
+
 .interests-grid {
     display: flex;
     justify-content: space-around;
@@ -168,6 +171,12 @@
     background: var(--primary-color);
     margin: 10px auto;
 }
+.timeline-item p {
+    background: var(--bg-color);
+    padding: 10px;
+    border-radius: 6px;
+    border-left: 2px solid var(--primary-color);
+}
     </style>
 </head>
 <body>
@@ -187,9 +196,11 @@
             <p>📅 Geburtsdatum: 24.09.2001</p>
         </div>
         <section>
-            <h2>Über mich</h2>
-            <p>Ich lebe in Berlin und arbeite gezielt auf meinen Einstieg in die IT hin. Aktuell bereite ich mich auf eine Ausbildung zum Fachinformatiker bzw. ein duales Studium vor und beschäftige mich eigenständig mit IT-Themen. Besonders interessieren mich neue Technologien und deren praktische Anwendung. Ich denke analytisch und arbeite mich strukturiert in neue Inhalte ein.</p>
-        </section>
+            <section>
+    <h2>Über mich</h2>
+    <p>Hallo! Ich lebe seit September 2024 in Berlin. Aktuell absolviere ich eine Ausbildung in der Pflege, habe jedoch gemerkt, dass meine wahre Leidenschaft im logischen Denken und der Informationstechnologie liegt. Daher strebe ich eine berufliche Umorientierung an.</p>
+    <p>Aus meiner bisherigen Ausbildung bringe ich wertvolle Stärken mit: Ich habe gelernt, mich schnell auf Deutsch im Berufsalltag zu verständigen, bin extrem belastbar, organisiert und bestens mit dem deutschen Berufsschul- und Prüfungssystem vertraut. Diese Disziplin und meine Vorkenntnisse möchte ich nun voll und ganz in die IT einbringen.</p>
+</section>
 <div class="card">
     <h2>Mein Werdegang</h2>
     <div class="timeline">
@@ -202,7 +213,13 @@
         <div class="timeline-item">
             <strong>2001:</strong> Geboren am 24. September
         </div>
-    </div>
+    <div class="timeline-item">
+    <strong>Seit 09.2024:</strong> Ausbildung im Bereich Pflege (Berlin)
+    <p style="font-size: 0.9rem; margin: 5px 0 0 0; color: #555;">
+        * Wertvolle praktische Erfahrung im deutschen Arbeitsalltag gesammelt.<br>
+        * Deutliche Verbesserung der deutschen Sprachkenntnisse durch täglichen Patientenkontakt.<br>
+        * Vertrautheit mit dem deutschen Schul- und Prüfungssystem in der Berufsschule.
+    </p>
 </div>
 
 <div class="card">
@@ -262,7 +279,7 @@
             <p>📱 Mobil: +49 17682243042</p>
             <p>🔗 LinkedIn: linkedin.com/in/dein-profil</p>
         </section>
-        <!-- بخش علاقه‌مندی‌ها -->
+       
 <div class="card">
     <h2>Interessen & Hobbys</h2>
     <div class="interests-grid">
@@ -285,7 +302,7 @@
     </div>
 </div>
 
-<!-- بخش نقل‌قول شخصی (خیلی در آلمان تاثیرگذاره) -->
+
 <div class="card" style="border-right: 5px solid var(--primary-color); background: #fdfdfd;">
     <p><i>"Disziplin aus der Musik trifft auf die Logik der IT. Ich bin bereit, die digitale Zukunft mitzugestalten."</i></p>
 </div>
