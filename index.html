@@ -177,6 +177,29 @@
     border-radius: 6px;
     border-left: 2px solid var(--primary-color);
 }
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.tool-tag {
+    display: inline-block;
+    background: #34495e;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    margin: 3px;
+}
+.language-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #ddd;
+}
+@media (max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -279,7 +302,35 @@
             <p>📱 Mobil: +49 17682243042</p>
             <p>🔗 LinkedIn: linkedin.com/in/dein-profil</p>
         </section>
-       
+       <div class="grid-2">
+    <!-- بخش ابزارها -->
+    <div class="card">
+        <h2>IT-Toolbox</h2>
+        <p style="font-size: 0.9rem;">Tools, mit denen ich mich beschäftige:</p>
+        <span class="tool-tag">VS Code</span>
+        <span class="tool-tag">Git/GitHub</span>
+        <span class="tool-tag">Windows Server</span>
+        <span class="tool-tag">Linux (Ubuntu)</span>
+        <span class="tool-tag">MS Office</span>
+        <span class="tool-tag">ChatGPT/AI-Tools</span>
+    </div>
+
+    <div class="card">
+        <h2>Sprachen</h2>
+        <div class="language-item">
+            <span>Persisch</span>
+            <strong>Muttersprache</strong>
+        </div>
+        <div class="language-item">
+            <span>Deutsch</span>
+            <strong>B2/C1 (Aktiv in Pflege)</strong>
+        </div>
+        <div class="language-item">
+            <span>Englisch</span>
+            <strong>Fließend (B2)</strong>
+        </div>
+    </div>
+</div>
 <div class="card">
     <h2>Interessen & Hobbys</h2>
     <div class="interests-grid">
