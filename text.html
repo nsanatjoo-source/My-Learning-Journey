@@ -160,6 +160,47 @@ border-radius: 4px;
 font-size: 12px;
 
 }
+.watch-later {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    display: none;
+}
+
+.progress-bar-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.progress-bar {
+    width: 60%;
+    height: 100%;
+    background-color: red;
+}
+
+.thumbnail-row:hover .watch-later {
+    display: block;
+}
+
+.thumbnail-row:hover .thumbnail {
+    transform: scale(1.03);
+    transition: transform 0.3s;
+}
+
+.video-container:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
 </style>
 
 <body>
@@ -181,7 +222,6 @@ font-size: 12px;
 </div>
 
     <div class="video-description">
-      در این ویدیو، ما به صورت جامع و کامل به آموزش HTML و CSS می‌پردازیم. این آموزش برای مبتدیان طراحی شده است و شامل مفاهیم پایه‌ای تا پیشرفته می‌شود. با ما همراه باشید تا بتوانید وب‌سایت‌های زیبا و حرفه‌ای بسازید.
     </div>
   <div class="progress-bar-container">
     <div class="progress-bar"></div>
