@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube clone</title>
-    <style>
-        .thumbnail {
-            width: 300px;
-            border-radius: 12px;
-            cursor: pointer;
-            transition: opacity 0.2s;
-            .hover{
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube Clone</title>
 
-            opacity: 0.9;
-            transform: scale(1.03);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-
-        }}
-        .search-bar {
-             background-image: url('https://cdn-icons-png.flaticon.com/512/622/622669.png');
-             background-size: 16px;
-             background-repeat: no-repeat;
-             background-position: 10px center;
-             padding-left: 35px;
-            font-size: 15px;
-            padding: 10px;
-            width: 300px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            border-color: blue;
-        }
-        .thumbnail:hover {
-            opacity: 0.9;
+<style>
+.thumbnail {
+    width: 300px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: block;
 }
-        .search-bar:focus {
+
+.thumbnail:hover {
+    opacity: 0.9;
+    transform: scale(1.03);
+}
+
+.search-bar {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/622/622669.png');
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+
+    font-size: 15px;
+    width: 300px;
+    padding: 10px;
+    padding-left: 35px;
+
+    border: 1px solid blue;
+    border-radius: 8px;
+}
+
+.search-bar:focus {
     outline: none;
     border-color: #065fd4;
     box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
@@ -43,27 +45,25 @@
     color: #888;
     font-family: Arial, sans-serif;
 }
-
-
-        </style>
-</head>
-<body 
-     animation: fadeIn 0.8s ease;
-
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.video-title {
+    width: 300px;
 }
-style="background: linear-gradient(to bottom, #ffffff, #f0f2f5); ">
-    <img class= "thumbnail" src="thumbnails/hq720 (1).avif">
-    <input type="text" placeholder="Search..."
-class="search-bar">
+
+</style>
+</head>
+
+<body>
+    <input type="text" placeholder="Search..." class="search-bar">
+    <img class="thumbnail" src="thumbnails/hq720 (1).avif">
+    
+    <p class="video-title">
+        Talking Tech and <strong>AI</strong>
+    </p>
+    <p class="video-author">
+        Marques
+    </p>
+    <p class="video-views">
+        3.4M views &#183; 6 months ago
+    </p>
 </body>
 </html>
